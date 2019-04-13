@@ -1,0 +1,14 @@
+stages:
+    - analysis
+
+analysis:
+    stage: analysis
+    image: golang:latest
+    script:
+        - rm -rf $GOPATH/src/cuter
+        - cd $GOPATH/src/
+        - ln -svf $CI_PROJECT_DIR 
+        - cd cuter
+        - pwd
+        - go env
+        - go test -short $(go list ./... | grep -v /vendor/)

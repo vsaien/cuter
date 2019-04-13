@@ -1,0 +1,38 @@
+{
+  "Name": "demo-rpc",
+  "Log": {
+    "Access": "logs/access.log",
+    "Error": "logs/error.log",
+    "Stat": "logs/stat.log"
+  },
+  "ListenOn": "127.0.0.1:10020",
+  "Etcd": {
+    "Hosts": [
+      "127.0.0.1:2379"
+    ],
+    "Key": "demo",
+    "UserName": "root",
+    "Password": "123456"
+  },
+  "Mysql": {
+    "DataSource": "root:1231@tcp(127.0.0.1:3306)/demo?charset=utf8mb4&parseTime=true&loc=Local",
+    "Table": {
+      "Demo": "demo"
+    }
+  },
+  "Mongodb": {
+    "Url": "127.0.0.1:27017",
+    "Database": "demo",
+    "Collection": {
+      "Demo": "demo"
+    }
+  },
+  "BizRedis": {
+    "Host": "192.168.3.201:6379",
+    "Type": "node"
+  },
+  "CacheRedis": {
+    "Host": "192.168.3.201:6379",
+    "Type": "node"
+  }
+}

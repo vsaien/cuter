@@ -1,0 +1,17 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+!**/Dockerfile
+
+# Unignore all dirs
+!*/
+
+.idea
+**/.DS_Store
+**/logs
+**/*.pem
+**/*.prof
+**/*.p12
+!Makefile

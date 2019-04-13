@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+// protoc --go_out=plugins=grpc:. demo.proto
+package remotedemo;
+
+message DemoRequest {
+    string token = 1;
+}
+
+message DemoResponse {
+    string token =1;
+}
+
+
+service DemoHandler {
+    rpc demoFuc(DemoRequest) returns (DemoResponse);
+}
