@@ -2,7 +2,7 @@
 # 目录介绍:
 	1. application 应用程序目录
 	2. common  公共模块目录
-	3. library 相关库服务目录
+	3. lib 相关库服务目录
 	4. example 代码示例目录
 
 例如：现开发CRM系统相关的接口<br>
